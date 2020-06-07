@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programming language</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+
+	<style>
+		table{ width: 100%; border:  2px solid #000;}
+		table th,td{border: 2px solid #000}
+	</style>
+</head>
+<body>
+<div class="container">
+  <header>
+<nav class="secondary_header" id="menu">
+      <ul>
+        <li><font  color="000000"  > <b> Programming language </b></font> </li>
+		<a href="index.html"><li><font color="FFFFFF"> Home </font> </li></a>
+		<a href="Page (1).html"><li><font color="FFFFFF"> C ++ </font> </li></a>
+		<a href="Page (2).html"><li><font color="FFFFFF"> C # </font> </li></a>
+		<a href="Page (3).html"><li><font color="FFFFFF"> Java </font> </li></a>
+		<a href="Page (4).html"><li><font color="FFFFFF"> References </font> </li></a>
+		  
+      </ul>
+    </nav>
+  </header>
+  <section>
+    
+    <article class="left_article">
+<h3>Introduction</h3>
+<p>C# (pronounced see sharp, like the musical note C♯, but written with the number sign) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. </p>
+<p>It was developed around 2000 by Microsoft as part of its .NET initiative and later approved as an international standard by Ecma (ECMA-334) in 2002 and ISO (ISO/IEC 23270) in 2003.</p>
+<p> Mono is the name of the free and open-source project to develop a compiler and runtime for the language. </p>
+<p>C# is one of the programming languages designed for the Common Language Infrastructure (CLI). C# was designed by Anders Hejlsberg, and its development team is currently led by Mads Torgersen. The most recent version is 8.0, which was released in 2019 alongside Visual Studio 2019 version 16.3.</p>
+    </article>
+    <aside class="right_article"><img src="images/2.png" alt="" width="150" height="150" class="placeholder"/> </aside>
+  </section>
+<div>
+   
+<article class="Bottom_article">
+      <h3>History</h3>
+
+      <p>During the development of the .NET Framework, the class libraries were originally written using a managed code compiler system called "Simple Managed C" (SMC).<br> In January 1999, Anders Hejlsberg formed a team to build a new language at the time called Cool, which stood for "C-like Object Oriented Language".<br> Microsoft had considered keeping the name "Cool" as the final name of the language, but chose not to do so for trademark reasons. By the time the .NET project was publicly announced at the July 2000 Professional Developers Conference, the language had been renamed C#, and the class libraries and ASP.NET runtime had been ported to C#. Hejlsberg is C#'s principal designer and lead architect at Microsoft, and was previously involved with the design of Turbo Pascal, Embarcadero Delphi (formerly CodeGear Delphi, Inprise Delphi and Borland Delphi), and Visual J++. In interviews and technical papers he has stated that flaws in most major programming languages (e.g. C++, Java, Delphi, and Smalltalk) drove the fundamentals of the Common Language Runtime (CLR), which, in turn, drove the design of the C# language itself. James Gosling, who created the Java programming language in 1994, and Bill Joy, a co-founder of Sun Microsystems, the originator of Java, called C# an "imitation" of Java; Gosling further said that "[C# is] sort of Java with reliability, productivity and security deleted."<br> Klaus Kreft and Angelika Langer (authors of a C++ streams book) stated in a blog post that "Java and C# are almost identical programming languages. Boring repetition that lacks innovation," "Hardly anybody will claim that Java or C# are revolutionary programming languages that changed the way we write programs," and "C# borrowed a lot from Java - and vice versa. Now that C# supports boxing and unboxing, we'll have a very similar feature in Java."<br> In July 2000, Hejlsberg said that C# is "not a Java clone" and is "much closer to C++" in its design. </p>
+</article>
+	
+	    <article class="Bottom_article">
+      <h3>Distinguishing features</h3>
+
+      <p>Some notable features of C# that distinguish it from C, C++, and Java where noted, are:
+		   <br> </p>
+			<p>
+			<b>Portability:</b><br>
+ By design, C# is the programming language that most directly reflects the underlying Common Language Infrastructure (CLI) Most of its intrinsic types correspond to value-types implemented by the CLI framework. However, the language specification does not state the code generation requirements of the compiler: that is, it does not state that a C# compiler must target a Common Language Runtime, or generate Common Intermediate Language (CIL), or generate any other specific format. Theoretically, a C# compiler could generate machine code like traditional compilers of C++ or Fortran. </p>
+			
+			<p>
+			<b>Typing :</b><br>
+ C# supports strongly typed implicit variable declarations with the keyword var, and implicitly typed arrays with the keyword new[] followed by a collection initializer. C# supports a strict Boolean data type, bool. Statements that take conditions, such as while and if, require an expression of a type that implements the true operator, such as the Boolean type. While C++ also has a Boolean type, it can be freely converted to and from integers, and expressions such as if (a) require only that a is convertible to bool, allowing a to be an int, or a pointer. C# disallows this "integer meaning true or false" approach, on the grounds that forcing programmers to use expressions that return exactly bool can prevent certain types of programming mistakes such as if (a = b) (use of assignment = instead of equality ==). C# is more type safe than C++. The only implicit conversions by default are those that are considered safe, such as widening of integers. This is enforced at compile-time, during JIT, and, in some cases, at runtime. No implicit conversions occur between Booleans and integers, nor between enumeration members and integers (except for literal 0, which can be implicitly converted to any enumerated type). Any user-defined conversion must be explicitly marked as explicit or implicit, unlike C++ copy constructors and conversion operators, which are both implicit by default. C# has explicit support for covariance and contravariance in generic types, unlike C++ which has some degree of support for contravariance simply through the semantics of return types on virtual methods.<br>
+		  </p>
+			<p>
+			<b>Methods and functions :</b><br>
+ A method in C# is a member of a class that can be invoked as a function (a sequence of instructions), rather than the mere value-holding capability of a class property. As in other syntactically similar languages, such as C++ and ANSI C, the signature of a method is a declaration comprising in order: any optional scope modifier keywords (such as private), the explicit specification of its return type (such as int, or the keyword void if no value is returned), the name of the method, and finally, a parenthesized sequence of comma-separated parameter specifications, each consisting of a parameter's type, its formal name and optionally, a default value to be used whenever none is provided. Certain specific kinds of methods, such as those that simply get or set a class property by return value or assignment, do not require a full signature, but in the general case, the definition of a class includes the full signature declaration of its methods. Like C++, and unlike Java, C# programmers must use the scope modifier keyword virtual to allow methods to be overridden by subclasses.[58] Extension methods in C# allow programmers to use static methods as if they were methods from a class's method table, allowing programmers to add methods to an object that they feel should exist on that object and its derivatives. </p>
+			<p>
+			<b>Memory access :</b><br>
+ In C#, memory address pointers can only be used within blocks specifically marked as unsafe, and programs with unsafe code need appropriate permissions to run. Most object access is done through safe object references, which always either point to a "live" object or have the well-defined null value; it is impossible to obtain a reference to a "dead" object (one that has been garbage collected), or to a random block of memory. An unsafe pointer can point to an instance of an 'unmanaged' value type that does not contain any references to garbage-collected objects, array, string, or a block of stack-allocated memory. Code that is not marked as unsafe can still store and manipulate pointers through the System.IntPtr type, but it cannot dereference them. Managed memory cannot be explicitly freed; instead, it is automatically garbage collected. Garbage collection addresses the problem of memory leaks by freeing the programmer of responsibility for releasing memory that is no longer needed.</p>
+				<p>
+			<b>Functional programming&nbsp; :</b><br>
+ Though primarily an imperative language, C# 2.0 offered limited support for functional programming through first-class functions and closures in the form of anonymous delegates. C# 3.0 expanded support for functional programming with the introduction of a lightweight syntax for lambda expressions, extension methods (an affordance for modules), and a list comprehension syntax in the form of a "query comprehension" language. C# 7.0 adds features typically found in functional languages like tuples and pattern matching.</p>
+</article>
+
+	<article class="Bottom_article">
+      <h3>Libraries</h3>
+
+      <p>The C# specification details a minimum set of types and class libraries that the compiler expects to have available. In practice, C# is most often used with some implementation of the Common Language Infrastructure (CLI), which is standardized as ECMA-335 Common Language Infrastructure (CLI). In addition to the standard CLI specifications, there are many commercial and community class libraries that build on top of the .NET framework libraries to provide additional functionality. </p>
+</article>
+	
+<p><br></p>
+</div>
+	</div>
+</body>
+</html>
